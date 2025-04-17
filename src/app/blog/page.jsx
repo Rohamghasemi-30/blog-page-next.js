@@ -21,4 +21,11 @@ function Postpage() {
   )
 }
 
+export async function generateMetadata({ params }) {
+  return {
+    title: `Here is blog post`,
+    description: `This is blog post page`,
+  }
+}
+
 export default Postpage;

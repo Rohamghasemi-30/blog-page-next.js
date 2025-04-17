@@ -12,4 +12,11 @@ function SinglePage({ params }) {
   );
 }
 
+export async function generateMetadata({ params }) {
+  return {
+    title: `Here is blog post with id: ${params.slug}`,
+    description: `This is blog post page for ID: ${params.slug}`,
+  }
+}
+
 export default SinglePage;
